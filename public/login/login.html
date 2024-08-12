@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/pet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/newNavigation.css">
+    <link rel="stylesheet" href="/login/login.css">
+    <script src="https://kit.fontawesome.com/c826e1e5a9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="topLayer">
+        <a href="/index.html">
+            <div id="logoSection">
+              <div id="logo"></div>
+              <p id="logoName">Happy Pets</p>
+            </div>
+          </a>
+
+        <div id="signingButtons">
+            <a id="login" href="/login/login.html">Login</a>
+            <a id="signUp" href="/login/signup.html">Sign Up</a>
+        </div>
+    </div>
+
+    <div id="banner">
+        <nav id="bannerContent">
+            <a id="Menu" href="/menu.html">Menu</a>
+            <div id="pagesContainer">
+                <a class="pages" href="/index.html"> Home </a>
+                <a class="pages" href="/about/about.html"> About Us </a>
+                <a class="pages" href="/adopt/adopt.html"> Adopt a Pet</a>
+                <a class="pages" href="/contact/contact.html"> Contact Us</a>
+                <a class="pages" href="/volunteer/volunteer.html"> Volunteer</a>
+                <a class="pages" href="/Event/Event.html"> Events</a>
+            </div>
+            <a id="Donate" href="/donate/donate.html">Donate</a>
+        </nav>
+    </div>
+
+    <main>
+        <div class="overlay"></div>
+        <div class="container">
+            <h1>Log in</h1>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button class="loginButton" type="submit">Log in</button>
+                <a href="/login/signup.html" id="signup_link">Don't have an account? Sign up.</a>
+            </form>
+        </div>
+        <footer>
+          <h3>Subscribe to Our Newsletter</h3>
+          <form id="subscribeForm">
+            <input type="email" id="subscribeEmail" name="email" placeholder="Your email" required>
+            <div class="checkbox-group">
+              <label><input type="checkbox" name="notifications" value="Updates"> Updates</label>
+              <label><input type="checkbox" name="notifications" value="Events"> Events</label>
+            </div>
+            <button type="submit">Subscribe</button>
+          </form>
+          <p>&copy; 2024 Happy Pets. All rights reserved.</p>
+        </footer>
+        <script src="index.js"></script>
+    </main>
+
+    <!-- overlay pop up thin gy -->
+    <div id="sidePopupOverlay" class="side-overlay">
+        <div class="side-popup-content">
+            <div class="dashboard-container">
+                <div class="navigation">
+                    <ul id="menu-list">
+                        <li class="profile">
+                            <span id="user-position" class="position"></span>
+                            <div class="icon profile-icon"><i class="fa-solid fa-user"></i></div>
+                            <div id="user-name" class="name"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="../menu.js"></script>
+<script src="../subscribe.js" defer></script>
+<script src="login.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopt a Pet - Happy Pets</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/pet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/newNavigation.css">
+    <link rel="stylesheet" href="/public/about/about.css">
+    <link rel="stylesheet" href="adopt.css">
+    <script src="https://kit.fontawesome.com/c826e1e5a9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="topLayer">
+        <a href="/index.html">
+            <div id="logoSection">
+              <div id="logo"></div>
+              <p id="logoName">Happy Pets</p>
+            </div>
+          </a>
+
+        <div id="signingButtons">
+            <a id="login" href="/login/login.html">Login</a>
+            <a id="signUp" href="/login/signup.html">Sign Up</a>
+            <a id="logout" href="/login/login.html" style="display: none;">Logout</a>
+        </div>
+    </div>
+
+    <main>
+        <div id="banner">
+            <nav id="bannerContent">
+                <a id="Menu" href="/menu.html">Menu</a>
+                <div id="pagesContainer">
+                    <a class="pages" href="/index.html"> Home </a>
+                    <a class="pages" href="/about/about.html"> About Us </a>
+                    <a class="pages" href="/adopt/adopt.html"> Adopt a Pet</a>
+                    <a class="pages" href="/contact/contact.html"> Contact Us</a>
+                    <a class="pages" href="/volunteer/volunteer.html"> Volunteer</a>
+                    <a class="pages" href="/Event/Event.html"> Events</a>
+                </div>
+                <a id="Donate" href="/donate/donate.html">Donate</a>
+            </nav>
+        </div>
+
+        <div class="container">
+            <h1>Welcome to Happy Pets</h1>
+            <div class="animal-options">
+                <img src="/images/doglogo.png" alt="Dogs" onclick="showDetails('dogs')">
+                <img src="/images/catlogo.png" alt="Cats" onclick="showDetails('cats')">
+                <img src="/images/birdlogo.png" alt="Birds" onclick="showDetails('birds')">
+                <img src="/images/rabbitlogo.png" alt="Rabbits" onclick="showDetails('rabbits')">
+                <img src="/images/reptilelogo.png" alt="Reptiles" onclick="showDetails('reptiles')">
+            </div>
+            <div class="search-bar">
+                <input type="text" id="search-input" oninput="filterAnimals()" placeholder="Search for animals...">
+            </div>
+            <div id="animal-details" class="animal-details">
+                <div id="dogs" class="animal-type">
+                    <h2>Dogs</h2>
+                    <div class="animal-item" data-name="German Shepard" onclick="showAdoptionForm('German Shepard')">
+                        <img src="/images/germanshepard.jpg" alt="German Shepard">
+                        <div class="animal-name">German Shepard</div>
+                        <div class="animal-description">Meet Max, a handsome German Shepherd with a heart of gold!
+                            Max is a loyal and intelligent companion who loves to play fetch and go for long walks.
+                            With his striking appearance and protective nature, Max would make a wonderful addition to
+                            an
+                            active family who enjoys outdoor adventures. He's eager to learn new tricks and commands and
+                            is
+                            always ready to shower you with love and affection.</div>
+                    </div>
+                    <div class="animal-item" data-name="Bulldog" onclick="showAdoptionForm('Bulldog')">
+                        <img src="/images/bulldog.jpeg" alt="Bulldog">
+                        <div class="animal-name">Bulldog</div>
+                        <div class="animal-description">Meet Daisy, the charming Bulldog with a laid-back personality
+                            and a heart full of love! With her wrinkled face and adorable snorts, Daisy is sure to steal
+                            your heart. She enjoys lounging in the sun and cuddling up on the couch for a cozy nap.
+                            Despite her relaxed demeanor, Daisy is always up for a playful romp in the yard and is
+                            incredibly loyal to her family. With her endearing snoring and gentle disposition, Daisy is
+                            the perfect companion for anyone seeking a loyal and affectionate friend.</div>
+                    </div>
+                    <div class="animal-item" data-name="Labrador" onclick="showAdoptionForm('Labrador')">
+                        <img src="/images/labrador.jpeg" alt="Labrador">
+                        <div class="animal-name">Labrador</div>
+                        <div class="animal-description">Meet Charlie, the friendly and energetic Labrador with a wagging
+                            tail and a perpetual smile! Charlie is a bundle of joy who loves everyone he meets. Whether
+                            it's playing fetch in the park or snuggling up for a movie night, Charlie is always up for
+                            an adventure. His boundless enthusiasm and gentle nature make him great with kids and other
+                            pets. With his shiny coat and soulful eyes, Charlie is sure to bring endless happiness and
+                            love to his forever home.</div>
+                    </div>
+                    <div class="animal-item" data-name="Golden Retriever"
+                        onclick="showAdoptionForm('Golden Retriever')">
+                        <img src="/images/goldenretriever.jpeg" alt="Golden Retriever">
+                        <div class="animal-name">Golden Retriever</div>
+                        <div class="animal-description">Meet Bella, the golden-hearted Golden Retriever with a sunny
+                            disposition and a wagging tail! Bella is the epitome of friendliness and loyalty. She loves
+                            nothing more than spending time with her family, whether it's going for long walks, playing
+                            fetch, or just enjoying a good belly rub. Bella's affectionate nature and gentle demeanor
+                            make her a perfect match for families with children or anyone seeking a loving companion.
+                            With her golden fur and loving eyes, Bella is ready to fill your home with endless joy and
+                            happiness.</div>
+                    </div>
+                </div>
+                <div id="cats" class="animal-type">
+                    <h2>Cats</h2>
+                    <div class="animal-item" data-name="Ragdoll" onclick="showAdoptionForm('Ragdoll')">
+                        <img src="/images/ragdoll.jpeg" alt="Ragdoll">
+                        <div class="animal-name">Ragdoll</div>
+                        <div class="animal-description">Meet Luna, the enchanting Ragdoll cat with the most mesmerizing
+                            blue eyes and silky fur! Luna is as sweet as she is beautiful, with a calm and gentle nature
+                            that makes her the purrfect lap companion. She enjoys lounging in sunny spots by the window
+                            and gracefully playing with feather toys. Luna is incredibly affectionate and loves curling
+                            up next to her humans for a cozy nap. With her soft coat and relaxed personality, Luna is
+                            sure to bring tranquility and warmth to any home lucky enough to adopt her.</div>
+                    </div>
+                    <div class="animal-item" data-name="Maine Coone" onclick="showAdoptionForm('Maine Coone')">
+                        <img src="/images/mainecoon.webp" alt="Maine Coone">
+                        <div class="animal-name">Maine Coone</div>
+                        <div class="animal-description">Meet Oliver, the majestic Maine Coon cat with a personality as
+                            big as his fluffy tail! Oliver is a gentle giant, known for his impressive size, tufted
+                            ears, and tufted paws. Despite his large stature, Oliver is a big softie at heart, loving
+                            nothing more than cuddling up with his humans. He enjoys interactive play sessions and
+                            showing off his acrobatic skills by leaping onto high perches. Oliver is incredibly sociable
+                            and gets along well with children, other pets, and even enjoys going for walks on a leash.
+                            With his striking appearance and affectionate nature, Oliver is ready to be the king of your
+                            castle!</div>
+                    </div>
+                    <div class="animal-item" data-name="British Shorthair"
+                        onclick="showAdoptionForm('British Shorthair')">
+                        <img src="/images/britishshorthair.jpg" alt="British Shorthair">
+                        <div class="animal-name">British Shorthair</div>
+                        <div class="animal-description">Meet Luna, the regal British Shorthair cat with a dignified
+                            presence and a heart full of love! Luna is known for her plush coat, round face, and
+                            captivating copper eyes. She has a calm and reserved demeanor, preferring lounging on her
+                            favorite spot rather than engaging in high-energy play. Luna enjoys the simple pleasures of
+                            life, such as watching birds from the window and receiving gentle chin scratches. With her
+                            serene disposition and elegant appearance, Luna adds a touch of sophistication to any
+                            household. She's the purrfect companion for those seeking a quiet and loving feline friend.
+                        </div>
+                    </div>
+                    <div class="animal-item" data-name="Scottish Fold" onclick="showAdoptionForm('Scottish Fold')">
+                        <img src="/images/scottishfold.avif" alt="Scottish Fold">
+                        <div class="animal-name">Scottish Fold</div>
+                        <div class="animal-description">Meet Archie, the adorable Scottish Fold cat with a penchant for
+                            mischief and a heart of gold! Archie's most distinguishing feature is his adorable folded
+                            ears, which give him an irresistible charm. He's playful and curious, always exploring every
+                            nook and cranny of his surroundings. Archie loves interactive toys and is particularly fond
+                            of chasing feather wands and batting around toy mice. Despite his playful nature, Archie
+                            also enjoys cuddling up in a warm lap for some well-deserved relaxation. With his quirky
+                            looks and affectionate personality, Archie is sure to steal the hearts of everyone he meets!
+                        </div>
+                    </div>
+                </div>
+                <div id="birds" class="animal-type">
+                    <h2>Birds</h2>
+                    <div class="animal-item" data-name="Budgie" onclick="showAdoptionForm('Budgie')">
+                        <img src="/images/budgie.jpeg" alt="Budgie">
+                        <div class="animal-name">Budgie</div>
+                        <div class="animal-description">Meet Sunny, the cheerful Budgie bird with a vibrant personality
+                            and a song that brightens up any room! Sunny is a small bundle of feathers with beautiful
+                            hues of blue and green. He loves to chirp and chatter, mimicking sounds and whistling tunes
+                            to entertain his human companions. Sunny enjoys flying around his cage, exploring new toys,
+                            and munching on delicious seeds and fresh fruits. With his playful antics and friendly
+                            demeanor, Sunny is sure to bring joy and laughter to any home. He's the perfect feathered
+                            friend for bird enthusiasts looking for a delightful companion to share their days with!
+                        </div>
+                    </div>
+                    <div class="animal-item" data-name="Parrot" onclick="showAdoptionForm('Parrot')">
+                        <img src="/images/parrot.jpg" alt="Parrot">
+                        <div class="animal-name">Parrot</div>
+                        <div class="animal-description">Meet Rio, the colorful and talkative Parrot with a personality
+                            as vibrant as his plumage! Rio is a stunning bird with feathers that mimic the colors of a
+                            tropical sunset. He's highly intelligent and loves to show off his repertoire of phrases and
+                            sounds, from whistles to full sentences. Rio enjoys interactive play and can often be found
+                            shredding toys or solving puzzles to keep his mind active. He thrives on social interaction
+                            and loves being the center of attention. With his outgoing nature and playful spirit, Rio is
+                            sure to bring endless entertainment and companionship to his forever family.</div>
+                    </div>
+                    <div class="animal-item" data-name="Cockatiel" onclick="showAdoptionForm('Cockatiel')">
+                        <img src="/images/cockatiel.jpg" alt="Cockatiel">
+                        <div class="animal-name">Cockatiel</div>
+                        <div class="animal-description">Meet Charlie, the charming Cockatiel with a sunny disposition
+                            and a melodious whistle! Charlie is a small and elegant bird with soft gray feathers and
+                            striking orange cheek patches. He loves to perch on shoulders and heads, enjoying the
+                            company of his human friends. Charlie enjoys singing and mimicking sounds, and he's always
+                            up for a game of peek-a-boo or a round of head scratches. With his friendly nature and
+                            playful antics, Charlie is sure to bring warmth and joy to any household. He's the perfect
+                            feathered companion for bird lovers looking for a delightful and affectionate friend.</div>
+                    </div>
+                    <div class="animal-item" data-name="Finch" onclick="showAdoptionForm('Finch')">
+                        <img src="/images/finch.jpg" alt="Finch">
+                        <div class="animal-name">Finch</div>
+                        <div class="animal-description">Meet Spark, the charming Finch bird with a bright personality
+                            and a cheerful chirp! Spark is a small and colorful bird with feathers that shine like the
+                            sun. He enjoys flitting around his cage, exploring every corner with curiosity. Spark loves
+                            to sing and chirp, filling the room with his delightful melodies. He's a sociable bird who
+                            enjoys interacting with his human companions and is always eager to hop onto a finger for
+                            some attention. With his friendly nature and beautiful plumage, Spark is sure to bring joy
+                            and brightness to any household. He's the perfect feathered friend for bird lovers looking
+                            for a delightful companion.</div>
+                    </div>
+                </div>
+                <div id="rabbits" class="animal-type">
+                    <h2>Rabbits</h2>
+                    <div class="animal-item" data-name="Rex rabbit" onclick="showAdoptionForm('Rex rabbit')">
+                        <img src="/images/rex.jpeg" alt="Rex Rabbit">
+                        <div class="animal-name">Rex rabbit</div>
+                        <div class="animal-description">Meet Benny, the charming Rex Rabbit with velvety fur and a
+                            playful spirit! Benny is a handsome bunny with a soft coat that's irresistible to touch. He
+                            loves to explore his surroundings, hopping around with boundless energy and curiosity. Benny
+                            enjoys playing with toys, especially ones he can chew on, and he's always up for a game of
+                            hide-and-seek. Despite his playful nature, Benny also enjoys cuddle time and will happily
+                            snuggle up in your lap for pets and affection. With his friendly demeanor and adorable
+                            floppy ears, Benny is sure to hop his way into your heart and bring endless joy to your
+                            home!</div>
+                    </div>
+                    <div class="animal-item" data-name="Havana rabbit" onclick="showAdoptionForm('Havana rabbit')">
+                        <img src="/images/havana.jpeg" alt="Havana rabbit">
+                        <div class="animal-name">Havana rabbit</div>
+                        <div class="animal-description">Meet Coco, the elegant Havana Rabbit with a sleek coat and a
+                            gentle disposition! Coco is a striking bunny with rich, chocolate-colored fur that gleams in
+                            the light. He has a calm and affectionate nature, enjoying quiet moments lounging in his
+                            favorite spots. Coco loves exploring his surroundings, investigating every nook and cranny
+                            with curiosity. He's also quite the social bunny, enjoying gentle pets and snuggles from his
+                            human friends. With his refined appearance and sweet personality, Coco is sure to bring
+                            warmth and charm to any home lucky enough to adopt him.</div>
+                    </div>
+                    <div class="animal-item" data-name="English Spot" onclick="showAdoptionForm('English Spot')">
+                        <img src="/images/englishspot.jpeg" alt="English Spot">
+                        <div class="animal-name">English Spot</div>
+                        <div class="animal-description">Meet Oreo, the charismatic English Spot Rabbit with a charming
+                            personality and a distinctive coat! Oreo is a bunny with a striking appearance, sporting a
+                            white coat with bold black spots that resemble a dalmatian's markings. He's an active and
+                            inquisitive rabbit who loves to hop around and explore his surroundings. Oreo enjoys playing
+                            with toys, hopping through tunnels, and showing off his agility with graceful jumps. He's
+                            also quite sociable and enjoys spending time with his human companions, eagerly hopping over
+                            for attention and treats. With his unique markings and playful nature, Oreo is sure to
+                            capture the hearts of everyone he meets!</div>
+                    </div>
+                    <div class="animal-item" data-name="French Lop" onclick="showAdoptionForm('French Lop')">
+                        <img src="/images/frenchlop.jpeg" alt="French Lop">
+                        <div class="animal-name">French Lop</div>
+                        <div class="animal-description">Meet Pierre, the charming French Lop Rabbit with floppy ears and
+                            a gentle soul! Pierre is a big bunny with an even bigger heart, known for his distinctive
+                            lopped ears and friendly demeanor. He loves lounging in cozy corners and munching on his
+                            favorite leafy greens. Pierre enjoys gentle pets and cuddles, melting into your arms with
+                            contentment. Despite his size, he's surprisingly graceful and enjoys hopping around his
+                            space with enthusiasm. With his adorable face and calm nature, Pierre is sure to be a
+                            wonderful addition to any home looking for a lovable and affectionate rabbit companion.
+                        </div>
+                    </div>
+                </div>
+                <div id="reptiles" class="animal-type">
+                    <h2>Reptiles</h2>
+                    <div class="animal-item" data-name="Bearded Dragon" onclick="showAdoptionForm('Bearded Dragon')">
+                        <img src="/images/beardeddragon.webp" alt="Bearded Dragon">
+                        <div class="animal-name">Bearded Dragon</div>
+                        <div class="animal-description">Meet Spike, the majestic Bearded Dragon with a striking
+                            appearance and a curious personality! Spike is a reptilian beauty with vibrant scales and a
+                            distinctive "beard" that he proudly displays when feeling confident or excited. He enjoys
+                            basking under his heat lamp, soaking up the warmth, and exploring his terrarium kingdom.
+                            Spike is a curious creature who loves to investigate his surroundings, whether it's climbing
+                            on rocks or digging in his substrate. He's also quite docile and enjoys being handled gently
+                            by his human companions. With his unique appearance and gentle nature, Spike is sure to
+                            fascinate and delight reptile enthusiasts of all ages!</div>
+                    </div>
+                    <div class="animal-item" data-name="Ball Python" onclick="showAdoptionForm('Ball Python')">
+                        <img src="/images/ballpython.webp" alt="Ball Python">
+                        <div class="animal-name">Ball Python</div>
+                        <div class="animal-description">Meet Monty, the sleek and curious Ball Python with a gentle
+                            demeanor and a mesmerizing pattern! Monty is a beautiful snake with striking colors and a
+                            calm disposition. He enjoys lounging in his cozy hide, curling up in a ball, or leisurely
+                            exploring his terrarium. Monty is a docile snake who loves to be held and enjoys gentle
+                            handling from his human friends. With his captivating markings and relaxed personality,
+                            Monty is the perfect companion for reptile lovers looking for a fascinating and
+                            low-maintenance pet.</div>
+                    </div>
+                    <div class="animal-item" data-name="Iguana" onclick="showAdoptionForm('Iguana')">
+                        <img src="/images/iguana.jpg" alt="Iguana">
+                        <div class="animal-name">Iguana</div>
+                        <div class="animal-description">Meet Iggy, the magnificent Green Iguana with a regal presence
+                            and a gentle soul! Iggy is a stunning reptile with vibrant green scales and expressive eyes.
+                            He enjoys basking under his heat lamp, soaking up the warmth, and munching on his favorite
+                            leafy greens. Iggy is an inquisitive creature who loves to explore his surroundings, whether
+                            it's climbing on branches or lounging in his terrarium. Despite his size, Iggy is quite
+                            docile and enjoys interacting with his human companions. With his majestic appearance and
+                            calm nature, Iggy is sure to captivate and delight reptile enthusiasts of all ages!</div>
+                    </div>
+                    <div class="animal-item" data-name="Turtle" onclick="showAdoptionForm('Turtle')">
+                        <img src="/images/turtle.png" alt="Turtle">
+                        <div class="animal-name">Turtle</div>
+                        <div class="animal-description">Meet Franklin, the charming Common Box Turtle with a laid-back
+                            personality and a love for exploring! Franklin is a small but fascinating turtle with a
+                            beautifully patterned shell and bright eyes. He enjoys roaming around his habitat, searching
+                            for tasty treats and interesting hiding spots. Franklin loves to bask under his heat lamp,
+                            soaking up the warmth, and then retreat into the cool shade for a nap. He's quite content to
+                            spend his days leisurely wandering and observing his surroundings. With his calm demeanor
+                            and curious nature, Franklin is sure to be a delightful addition to any home seeking a
+                            friendly reptilian companion!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="popup-form" class="popup-form">
+            <div class="popup-content">
+                <span class="close-btn" onclick="closeAdoptionForm()">&times;</span>
+                <h2>Adoption Inquiry</h2>
+                <form id="adoption-form">
+                    <input type="hidden" id="animal-name" name="animal-name">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email2" name="email" required>
+                    <label for="message">Why do you want to adopt this pet?</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <h3>Subscribe to Our Newsletter</h3>
+        <form id="subscribeForm">
+          <input type="email" id="email" name="email" placeholder="Your email" required>
+          <div class="checkbox-group">
+            <label><input type="checkbox" name="notifications" value="Updates"> Updates</label>
+            <label><input type="checkbox" name="notifications" value="Events"> Events</label>
+          </div>
+          <button type="submit">Subscribe</button>
+        </form>
+        <p>&copy; 2024 Happy Pets. All rights reserved.</p>
+      </footer>
+
+    <!-- overlay pop up thin gy -->
+    <div id="sidePopupOverlay" class="side-overlay">
+        <div class="side-popup-content">
+            <div class="dashboard-container">
+                <div class="navigation">
+                    <ul id="menu-list">
+                        <li class="profile">
+                            <span id="user-position" class="position"></span>
+                            <div class="icon profile-icon"><i class="fa-solid fa-user"></i></div>
+                            <div id="user-name" class="name"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../menu.js"></script>
+    <script src="../subscribe.js" defer></script>
+    <script src="adopt.js"></script>
+</body>
+
+</html>

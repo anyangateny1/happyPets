@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Faculties - Happy Pets</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/pet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/newNavigation.css">
+    <link rel="stylesheet" href="managefaculties.css">
+    <script src="https://kit.fontawesome.com/c826e1e5a9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="topLayer">
+        <a href="/index.html">
+            <div id="logoSection">
+              <div id="logo"></div>
+              <p id="logoName">Happy Pets</p>
+            </div>
+          </a>
+
+        <div id="signingButtons">
+            <a id="login" href="/login/login.html">Login</a>
+            <a id="signUp" href="/login/signup.html">Sign Up</a>
+            <a id="logout" href="/login/login.html" style="display: none;">Logout</a>
+        </div>
+    </div>
+
+    <div id="banner">
+        <nav id="bannerContent">
+            <a id="Menu" href="/menu.html">Menu</a>
+            <div id="pagesContainer">
+                <a class="pages" href="/index.html"> Home </a>
+                <a class="pages" href="/about/about.html"> About Us </a>
+                <a class="pages" href="/adopt/adopt.html"> Adopt a Pet</a>
+                <a class="pages" href="/contact/contact.html"> Contact Us</a>
+                <a class="pages" href="/volunteer/volunteer.html"> Volunteer</a>
+                <a class="pages" href="/Event/Event.html"> Events</a>
+            </div>
+            <a id="Donate" href="/donate/donate.html">Donate</a>
+        </nav>
+    </div>
+
+    <main>
+        <div id="search-faculty">
+            <input type="text" id="search-term" placeholder="Enter faculty name">
+            <button type="button" id="search-button">Search Faculties</button>
+        </div>
+        <div id="faculties-container">
+            <table id="faculties-table">
+                <thead>
+                    <tr>
+                        <th>Faculty</th>
+                        <th>Number of Members</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Faculties will be dynamically populated here -->
+                </tbody>
+            </table>
+        </div>
+        <div class="form-container">
+            <form id="add-faculty-form">
+                <input type="text" id="faculty-name" name="faculty-name" placeholder="Faculty Name" required>
+                <button type="submit">Add Faculty</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- overlay pop up thin gy -->
+    <div id="sidePopupOverlay" class="side-overlay">
+        <div class="side-popup-content">
+            <span class="close">&times;</span> <!-- Close button -->
+            <div class="dashboard-container">
+                <div class="navigation">
+                    <ul id="menu-list">
+                        <li class="profile">
+                            <span id="user-position" class="position"></span>
+                            <div class="icon profile-icon"><i class="fa-solid fa-user"></i></div>
+                            <div id="user-name" class="name"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../menu.js"></script>
+    <script src="managefaculties.js"></script>
+</body>
+
+</html>

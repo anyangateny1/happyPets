@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer with Happy Pets</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/pet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/newNavigation.css">
+    <link rel="stylesheet" href="/volunteer/volunteer.css">
+    <script src="https://kit.fontawesome.com/c826e1e5a9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+      <div id="topLayer">
+        <a href="/index.html">
+            <div id="logoSection">
+              <div id="logo"></div>
+              <p id="logoName">Happy Pets</p>
+            </div>
+          </a>
+
+        <div id="signingButtons">
+            <a id="login" href="/login/login.html">Login</a>
+            <a id="signUp" href="/login/signup.html">Sign Up</a>
+            <a id="logout" href="/login/login.html" style="display: none;">Logout</a>
+        </div>
+
+    </div>
+      <div id="banner">
+        <nav id="bannerContent">
+            <a id="Menu" href="/menu.html">Menu</a>
+            <div id="pagesContainer">
+                <a class="pages" href="/index.html"> Home </a>
+                <a class="pages" href="/about/about.html"> About Us </a>
+                <a class="pages" href="/adopt/adopt.html"> Adopt a Pet</a>
+                <a class="pages" href="/contact/contact.html"> Contact Us</a>
+                <a class="pages" href="/volunteer/volunteer.html"> Volunteer</a>
+                <a class="pages" href="/Event/Event.html"> Events</a>
+            </div>
+            <a id="Donate" href="/donate/donate.html">Donate</a>
+        </nav>
+    </div>
+    </header>
+
+    <section class="volunteer-hero">
+        <img src="/images/volunteer-hero.jpg" alt="Volunteers in action">
+        <div class="hero-text">
+            <h1>Join Our Volunteer Team</h1>
+            <p>Make a difference in the lives of animals and your community.</p>
+        </div>
+    </section>
+
+    <section class="why-volunteer">
+        <h2>Why Volunteer?</h2>
+        <p>Volunteering with Happy Pets is a rewarding experience. Not only will you help animals in need, but you'll also meet like-minded individuals and gain valuable skills.</p>
+        <div class="testimonials">
+            <blockquote>"Volunteering here has been one of the most rewarding experiences of my life." - Jane Doe</blockquote>
+            <blockquote>"I've learned so much about animal care and met some amazing people." - John Smith</blockquote>
+        </div>
+    </section>
+
+    <section class="volunteer-opportunities">
+        <h2>Volunteer Opportunities</h2>
+        <div class="opportunity">
+            <h3>Animal Care</h3>
+            <p>Help with feeding, cleaning, and socializing our animals.</p>
+        </div>
+        <div class="opportunity">
+            <h3>Events</h3>
+            <p>Assist with organizing and running fundraising and community events.</p>
+        </div>
+        <div class="opportunity">
+            <h3>Administrative Support</h3>
+            <p>Help with office tasks, data entry, and communications.</p>
+        </div>
+    </section>
+
+    <section class="how-to-get-started">
+        <h2>How to Get Started</h2>
+        <p>Follow these steps to become a volunteer:</p>
+        <ol>
+            <li>Fill out the application form below.</li>
+            <li>Attend a volunteer orientation session.</li>
+            <li>Start making a difference!</li>
+        </ol>
+        <form class="volunteer-form">
+            <label for="role">Preferred Role:</label>
+            <select id="role" name="role">
+                <option value="Animal-Care">Animal Care</option>
+                <option value="Dog-Training">Dog Training</option>
+                <option value="Foster-Care">Foster Care</option>
+                <option value="Animal-Rescue">Animal Rescue</option>
+                <option value="Gardening-Maintenance">Gardening Maintenance</option>
+            </select>
+            <button type="submit">Apply Now</button>
+        </form>
+    </section>
+    <script src="volunteer.js"></script>
+
+    <section class="impact">
+        <h2>Our Volunteers' Impact</h2>
+        <p>In 2023, our volunteers helped us rescue over 500 animals and organize 20 community events.</p>
+        <!-- Include infographics or statistics here -->
+    </section>
+
+    <footer>
+        <h3>Subscribe to Our Newsletter</h3>
+        <form id="subscribeForm">
+          <input type="email" id="email" name="email" placeholder="Your email" required>
+          <div class="checkbox-group">
+            <label><input type="checkbox" name="notifications" value="Updates"> Updates</label>
+            <label><input type="checkbox" name="notifications" value="Events"> Events</label>
+          </div>
+          <button type="submit">Subscribe</button>
+        </form>
+        <p>&copy; 2024 Happy Pets. All rights reserved.</p>
+      </footer>
+
+    <!-- overlay pop up thin gy -->
+    <div id="sidePopupOverlay" class="side-overlay">
+        <div class="side-popup-content">
+            <span class="close">&times;</span> <!-- Close button -->
+            <div class="dashboard-container">
+                <div class="navigation">
+                    <ul id="menu-list">
+                        <li class="profile">
+                            <span id="user-position" class="position"></span>
+                            <div class="icon profile-icon"><i class="fa-solid fa-user"></i></div>
+                            <div id="user-name" class="name"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+
+<script src="../menu.js"></script>
+<script src="../subscribe.js" defer></script>
+</body>
+</html>

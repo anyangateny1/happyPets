@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/newNavigation.css">
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://kit.fontawesome.com/c826e1e5a9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="topLayer">
+    <a href="/index.html">
+        <div id="logoSection">
+          <div id="logo"></div>
+          <p id="logoName">Happy Pets</p>
+        </div>
+      </a>
+
+    <div id="signingButtons">
+        <a id="login" href="/login/login.html">Login</a>
+        <a id="signUp" href="/login/signup.html">Sign Up</a>
+        <a id="logout" href="/login/login.html" style="display: none;">Logout</a>
+    </div>
+  </div>
+
+  <div id="banner">
+    <nav id="bannerContent">
+        <a id="Menu" href="/menu.html">Menu</a>
+        <div id="pagesContainer">
+            <a class="pages" href="/index.html"> Home </a>
+            <a class="pages" href="/about/about.html"> About Us </a>
+            <a class="pages" href="/adopt/adopt.html"> Adopt a Pet</a>
+            <a class="pages" href="/contact/contact.html"> Contact Us</a>
+            <a class="pages" href="/volunteer/volunteer.html"> Volunteer</a>
+            <a class="pages" href="/Event/Event.html"> Events</a>
+        </div>
+        <a id="Donate" href="/donate/donate.html">Donate</a>
+    </nav>
+  </div>
+
+  <main>
+    <section class="contact-section">
+        <div id="contact-div">
+
+            <div id="address-block">
+                <div id="icon-address"> </div>
+                <h2>Address</h2>
+                <br>
+
+                <p class="sub-headings">Adelaide Shelter</p>
+                <p>123 Fake1 Street 1000</p>
+                <br>
+
+                <p class="sub-headings">Melbourne Shelter</p>
+                <p>321 Fake1 Road 2000</p>
+                <br>
+
+                <p class="sub-headings">Sydney Shelter</p>
+                <p>246 Fake2 Street 3000</p>
+                <br>
+
+                <p class="sub-headings">Brisbane Shelter</p>
+                <p>642 Fake2 Road 4000</p>
+                <br>
+            </div>
+
+            <div id="phone-block">
+                <div id="icon-phone"> </div>
+                <h2>Phone</h2>
+                <br>
+
+                <p class="sub-headings">Adelaide Shelter</p>
+                <p>04 123 456 780</p>
+                <br>
+
+                <p class="sub-headings">Melbourne Shelter</p>
+                <p>03 321 654 870</p>
+                <br>
+
+                <p class="sub-headings">Sydney Shelter</p>
+                <p>02 246 810 120</p>
+                <br>
+
+                <p class="sub-headings">Brisbane Shelter</p>
+                <p>07 642 018 210</p>
+                <br>
+            </div>
+
+            <div id="email-block">
+                <div id="icon-email"> </div>
+                <h2>Email</h2>
+                <br>
+
+                <p class="sub-headings">Adelaide Shelter</p>
+                <p>adelaide@happypets.com</p>
+                <br>
+
+                <p class="sub-headings">Melbourne Shelter</p>
+                <p>melbourne@happypets.com</p>
+                <br>
+
+                <p class="sub-headings">Sydney Shelter</p>
+                <p>sydney@happypets.com</p>
+                <br>
+
+                <p class="sub-headings">Brisbane Shelter</p>
+                <p>birsbane@happypets.com</p>
+                <br>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="messeage-section">
+        <div id="message-div">
+
+            <h2>Message Us</h2>
+
+            <p>If you have any enquiries and wish to message us online, pease fill in your
+                <br>
+                details below and one of our members will soon be in contact with you.
+            </p>
+
+            <form action="#" id="enquiry">
+
+                <div id="first-last-container">
+                    <div id="first-name-div">
+                        <label for="firstName">First Name:</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+
+                    <div id="last-name-div">
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                </div>
+
+                <div id="email-container">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div id="message-container">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+
+                <button class="submitButton" type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+  </main>
+
+  <footer>
+    <h3>Subscribe to Our Newsletter</h3>
+    <form id="subscribeForm">
+      <input type="email" id="subscribeEmail" name="email" placeholder="Your email" required>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="notifications" value="Updates"> Updates</label>
+        <label><input type="checkbox" name="notifications" value="Events"> Events</label>
+      </div>
+      <button type="submit">Subscribe</button>
+    </form>
+    <p>&copy; 2024 Happy Pets. All rights reserved.</p>
+  </footer>
+
+
+  <div id="sidePopupOverlay" class="side-overlay">
+    <div class="side-popup-content">
+        <span class="close">&times;</span> <!-- Close button -->
+        <div class="dashboard-container">
+            <div class="navigation">
+                <ul id="menu-list">
+                    <li class="profile">
+                        <span id="user-position" class="position"></span>
+                        <div class="icon profile-icon"><i class="fa-solid fa-user"></i></div>
+                        <div id="user-name" class="name"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  </div>
+
+<script src="../menu.js"></script>
+<script src="../subscribe.js" defer></script>
+</body>
+</html>

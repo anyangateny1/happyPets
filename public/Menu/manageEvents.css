@@ -1,0 +1,153 @@
+/* manageEvents.css */
+
+/* General styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main content styles */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    width: 100%;
+    color: #333;
+    text-align: center;
+}
+
+.section {
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+}
+
+form {
+    margin: 20px 0;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #ffcc00;
+    color: #333;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #e6b800;
+}
+
+/* Event list styles */
+#event-list {
+    margin-top: 20px;
+}
+
+.event-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.event-item h3 {
+    margin: 0;
+    color: #333;
+}
+
+.event-item .event-actions {
+    display: flex;
+}
+
+.event-item button {
+    margin-left: 10px;
+    background-color: #ffcc00;
+    color: #333;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.event-item button:hover {
+    background-color: #e6b800;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer input, footer button {
+    margin: 5px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+footer button {
+    background-color: #ffcc00;
+    color: #333;
+    cursor: pointer;
+}
+
+footer button:hover {
+    background-color: #e6b800;
+}
+
+.checkbox-group {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.checkbox-group label {
+    margin-right: 10px;
+}
+
+

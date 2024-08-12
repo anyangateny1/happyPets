@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.navigation ul li.profile .position {
+    color: orange;
+    font-size: 1.1em;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px; 
+}
+
+:root {
+    --blue: #287bff;
+    --white: #fff;
+    --grey: #f5f5f5;
+    --black1: #222;
+    --black2: #999;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.dashboard-container {
+    position: relative;
+    width: 100%;
+}
+
+.navigation {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background: var(--blue);
+    border-left: 10px solid var(--blue);
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.navigation ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 20px; /* Added padding to position the profile icon at the top */
+}
+
+.navigation ul li {
+    position: relative;
+    list-style: none;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.navigation ul li.profile {
+    margin-top: 2em;
+    color: var(--white);
+    text-align: center;
+    padding-bottom: 20px; /* Space below the profile section */
+    pointer-events: none;
+}
+
+.navigation ul li.profile .profile-icon {
+    font-size: 3em; /* Bigger icon size */
+    padding-top: 10px; /* Additional padding to center the icon */
+}
+
+.navigation ul li.profile .name {
+    font-size: 1.2em; /* Larger text size */
+    padding-top: 5px; /* Space above the name text */
+}
+
+.navigation ul li:hover {
+    background: var(--white);
+}
+
+.navigation ul li a {
+    display: flex;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.navigation ul li:hover a {
+    color: var(--blue);
+}
+
+.navigation ul li a .icon {
+    min-width: 60px;
+    height: 60px;
+    line-height: 70px;
+    text-align: center;
+}
+
+.navigation ul li a .title {
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    white-space: nowrap;
+}
+
+#editProfile {
+    margin-top: 40px; /* Adjust spacing */
+}

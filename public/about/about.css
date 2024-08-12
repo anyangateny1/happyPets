@@ -1,0 +1,99 @@
+/* about.css */
+section {
+  margin: 20px auto;
+  padding: 40px;
+  width: 80%;
+  max-width: 1200px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+section h2 {
+  text-align: center;
+  color: #4CAF50;
+  font-size: 32px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #4CAF50;
+  padding-bottom: 10px;
+}
+
+section h3 {
+  color: #333;
+  font-size: 26px;
+  margin-top: 30px;
+  border-left: 4px solid #4CAF50;
+  padding-left: 10px;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.text-content {
+  width: 50%;
+  padding: 0 20px;
+}
+
+.image-content {
+  width: 45%;
+  text-align: center;
+}
+
+.image-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+section p {
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+section ul {
+  list-style: none;
+  padding: 0;
+}
+
+section ul li {
+  color: #555;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+section ul li::before {
+  content: '•';
+  color: #4CAF50;
+  position: absolute;
+  left: 0;
+  font-size: 20px;
+  line-height: 1;
+}
+
+section ul li:hover {
+  color: #333;
+}
+
+section p:last-child {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 30px;
+  color: black;
+}
+
+  .text-content, .image-content {
+    width: 100%;
+    padding: 0;
+  }
+
+  .text-content {
+    margin-bottom: 20px;
+  }

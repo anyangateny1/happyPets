@@ -1,0 +1,471 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base font size for scaling */
+html {
+  font-size: 16px; /* This is the base font size */
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
+}
+
+/* Header Styling */
+header {
+  background-color: #4CAF50;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.625rem 1.25rem;
+}
+
+header .logo img {
+  width: 9.375rem; /* Adjust logo size */
+}
+
+.main-nav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.main-nav li {
+  margin-left: 1.25rem;
+  position: relative;
+}
+
+.main-nav li a,
+.main-nav li .dropbtn {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  padding: 0.3125rem 0.625rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s; /* Add transition for hover effect */
+}
+
+.main-nav li a:hover,
+.main-nav li .dropbtn:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Add hover effect */
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(15, 77, 7);
+  min-width: 10rem;
+  box-shadow: 0px 0.5rem 1rem 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-arrow::after {
+  content: ' ▼';
+  font-size: 0.75rem;
+}
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.donate-button {
+  background-color: #FF4500;
+  color: white;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+.donate-button:hover {
+  background-color: #ff6347;
+}
+
+/* Hero Section Styling */
+.hero {
+  background: url('/images/hero.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 9.375rem 1.25rem;
+  background-size: cover; /* Ensures image covers entire section */
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 0.625rem;
+}
+
+.hero-text p {
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.9375rem 1.875rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 0.3125rem;
+}
+
+.cta-button:hover {
+  background-color: #054908;
+}
+
+/* About Section Styling */
+.about-section {
+  padding: 3.125rem 1.25rem;
+  text-align: center;
+}
+
+.about-text {
+  max-width: 43.75rem;
+  margin: 0 auto;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.about-text p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 1.25rem;
+}
+
+.learn-more-button {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.625rem 1.25rem;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 1.25rem;
+}
+
+.learn-more-button:hover {
+  background-color: #054908;
+}
+
+/* Help Section Styling */
+.help-section {
+  padding: 3.125rem 1.25rem;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.help-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.help-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  max-width: 18.75rem;
+  margin: 1.25rem;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 18.75rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.625rem;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Volunteer Section Styling */
+.volunteer-section {
+  background: url('/images/volunteer.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 9.375rem 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.volunteer-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.volunteer-text p {
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+  max-width: 31.25rem;
+}
+
+.volunteer-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem; /* Add gap between buttons */
+}
+
+.volunteer-button {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.9375rem 1.875rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 0.3125rem;
+  transition: background-color 0.3s;
+  width: 100%;
+  text-align: center;
+}
+
+.volunteer-button:hover {
+  background-color: #054908;
+}
+
+/* Events Section Styling */
+.events-section {
+  padding: 5rem 1.25rem;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.events-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.events-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.event-card a {
+  color: #4CAF50;
+}
+
+.event-card {
+  max-width: 18.75rem;
+  margin: 1.25rem;
+  text-align: center;
+}
+
+.event-card img {
+  width: 18.75rem;
+  height: 12.5rem; /* Set fixed height */
+  object-fit: cover; /* Maintain aspect ratio */
+  border-radius: 0.5rem;
+  margin-bottom: 0.3125rem;
+}
+
+.event-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.625rem;
+}
+
+/* Meet The Team Styling */
+.team-section {
+  text-align: center;
+  padding: 1.25rem;
+}
+
+.team-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.team-grid {
+  display: flex;
+  gap: 0.625rem;
+  justify-content: center;
+}
+
+.team-member {
+  flex: 1;
+  max-width: 12.5rem;
+  text-align: center;
+}
+
+.team-member img {
+  width: 9.375rem;
+  height: 9.375rem;
+  object-fit: cover;
+  margin-bottom: 0.625rem;
+}
+
+.team-member p {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Contact Us Section Styling */
+.contact-section {
+  text-align: center;
+  padding: 2.5rem 1.25rem;
+  background-color: #f9f9f9;
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.contact-section p {
+  font-size: 1.2rem;
+  margin-bottom: 1.25rem;
+  color: #555;
+}
+
+.contact-button {
+  display: inline-block;
+  padding: 0.625rem 1.25rem;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 0.3125rem;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+  background-color: #45a049;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1.25rem 0;
+}
+
+footer h3 {
+  margin-bottom: 0.625rem;
+}
+
+footer form {
+  margin-bottom: 0.625rem;
+}
+
+footer form input[type="email"] {
+  padding: 0.625rem;
+  width: 12.5rem;
+  margin-right: 0.625rem;
+}
+
+footer form button {
+  padding: 0.625rem 1.25rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+footer form button:hover {
+  background-color: #45a049;
+}
+
+footer p {
+  margin-top: 0.625rem;
+}
+
+.checkbox-group {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.3rem;
+  margin-bottom: 0.6rem;
+}
+
+.checkbox-group label {
+  display: flex;
+  color: white;
+  align-items: center;
+}
+
+
+/* Responsive typography */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px; /* Adjust base font size for smaller screens */
+  }
+
+  .main-nav li a,
+  .main-nav li .dropbtn {
+    font-size: 0.875rem; /* Adjust font size for smaller screens */
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem; /* Adjust font size for smaller screens */
+  }
+
+  .hero-text p {
+    font-size: 1.2rem; /* Adjust font size for smaller screens */
+  }
+
+  .cta-button {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+
+  .about-text h2 {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+  }
+
+  .about-text p {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+}
+

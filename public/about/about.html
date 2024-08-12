@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Happy Pets</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/pet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/newNavigation.css">
+    <link rel="stylesheet" href="about.css">
+    <script src="https://kit.fontawesome.com/c826e1e5a9.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="topLayer">
+        <a href="/index.html">
+            <div id="logoSection">
+              <div id="logo"></div>
+              <p id="logoName">Happy Pets</p>
+            </div>
+          </a>
+
+        <div id="signingButtons">
+            <a id="login" href="/login/login.html">Login</a>
+            <a id="signUp" href="/login/signup.html">Sign Up</a>
+            <a id="logout" href="/login/login.html" style="display: none;">Logout</a>
+        </div>
+    </div>
+
+    <main>
+    <div id="banner">
+        <nav id="bannerContent">
+            <a id="Menu" href="/menu.html">Menu</a>
+            <div id="pagesContainer">
+                <a class="pages" href="/index.html"> Home </a>
+                <a class="pages" href="/about/about.html"> About Us </a>
+                <a class="pages" href="/adopt/adopt.html"> Adopt a Pet</a>
+                <a class="pages" href="/contact/contact.html"> Contact Us</a>
+                <a class="pages" href="/volunteer/volunteer.html"> Volunteer</a>
+                <a class="pages" href="/Event/Event.html"> Events</a>
+            </div>
+            <a id="Donate" href="/donate/donate.html">Donate</a>
+        </nav>
+    </div>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <div class="content-container">
+            <div class="text-content">
+                <p>Welcome to Happy Pets! We are a passionate team dedicated to providing shelter and care for animals in need. Our mission is to find loving homes for every pet that comes through our doors.</p>
+            </div>
+            <div class="image-content">
+                <img src="/images/unnamed.webp" alt="About Us Image">
+            </div>
+        </div>
+
+        <h3>Our Story</h3>
+        <div class="content-container">
+            <div class="text-content">
+                <p>Happy Pets was founded by Kemal with the vision of providing a safe haven for animals in need. Since our inception, we have worked tirelessly to rescue, rehabilitate, and rehome countless pets.</p>
+            </div>
+        </div>
+
+        <h3>Our Mission and Vision</h3>
+        <div class="content-container">
+            <div class="text-content">
+                <p>Our mission is to provide shelter, medical care, and love to every animal that comes through our doors, while our vision is to create a world where every pet has a loving home.</p>
+            </div>
+            <div class="image-content">
+                <img src="/images/adopt-a-pet.jpg" alt="Mission and Vision Image">
+            </div>
+        </div>
+
+        <h3>What We Do</h3>
+        <div class="content-container">
+            <div class="text-content">
+                <p>At Happy Pets, we rescue animals from various situations, including neglect, abuse, and abandonment. We provide medical care, rehabilitation, and work to find them loving forever homes.</p>
+            </div>
+        </div>
+
+        <h3>Our Team</h3>
+        <ul>
+            <li>Kemal - Software Developer</li>
+            <li>Ayii - Software Developer</li>
+            <li>Anyang - Software Developer</li>
+            <li>Hossam - Software Developer</li>
+        </ul>
+
+        <h3>Our Board</h3>
+        <ul>
+            <li>Mark Olivero - President</li>
+            <li>Jane Smith - Vice President</li>
+            <li>Michael Johnson - Treasurer</li>
+        </ul>
+
+        <p>Visit us at one of our shelters and make a difference in the life of a furry friend!</p>
+    </section>
+
+
+
+    <footer>
+        <h3>Subscribe to Our Newsletter</h3>
+        <form id="subscribeForm">
+          <input type="email" id="email" name="email" placeholder="Your email" required>
+          <div class="checkbox-group">
+            <label><input type="checkbox" name="notifications" value="Updates"> Updates</label>
+            <label><input type="checkbox" name="notifications" value="Events"> Events</label>
+          </div>
+          <button type="submit">Subscribe</button>
+        </form>
+        <p>&copy; 2024 Happy Pets. All rights reserved.</p>
+      </footer>
+
+    </main>
+
+    <div id="sidePopupOverlay" class="side-overlay">
+        <div class="side-popup-content">
+            <span class="close">&times;</span> <!-- Close button -->
+            <div class="dashboard-container">
+                <div class="navigation">
+                    <ul id="menu-list">
+                        <li class="profile">
+                            <span id="user-position" class="position"></span>
+                            <div class="icon profile-icon"><i class="fa-solid fa-user"></i></div>
+                            <div id="user-name" class="name"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+
+    <script src="../menu.js"></script>
+    <script src="../subscribe.js" defer></script>
+</body>
+</html>

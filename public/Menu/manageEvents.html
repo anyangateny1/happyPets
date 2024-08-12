@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Events</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/pet.css">
+    <link rel="stylesheet" href="/stylesheets/newNavigation.css">
+    <link rel="stylesheet" href="manageEvents.css">
+</head>
+<body>
+    <div id="topLayer">
+        <div id="logoSection">
+            <div id="logo"></div>
+            <p id="logoName">Happy Pets</p>
+        </div>
+
+        <div id="signingButtons">
+            <a id="login" href="/login/login.html">Login</a>
+            <a id="signUp" href="/login/signup.html">Sign Up</a>
+        </div>
+    </div>
+
+    <div id="banner">
+        <nav id="bannerContent">
+            <a id="Menu" href="/menu.html">Menu</a>
+            <div id="pagesContainer">
+                <a class="pages" href="/index.html"> Home </a>
+                <a class="pages" href="/about/about.html"> About Us </a>
+                <a class="pages" href="/adopt/adopt.html"> Adopt a Pet</a>
+                <a class="pages" href="/contact/contact.html"> Contact Us</a>
+                <div class="pages dropdown">
+                    <a class="dropdown-toggle" href="/volunteer/volunteer.html"> Volunteer</a>
+                    <div class="dropdown-content">
+                        <a href="/Event/Event.html">Join an organisation</a>
+                        <a href="/Event/Event.html">Apply for a shelter</a>
+                    </div>
+                </div>
+
+                <div class="pages dropdown">
+                    <a class="dropdown-toggle" href="/Event/Event.html"> Events</a>
+                    <div class="dropdown-content">
+                        <a href="/Event/upcoming.html">Upcoming Events</a>
+                        <a href="/Event/past.html">Past Events</a>
+                        <a href="/Event/register.html">Register for an Event</a>
+                    </div>
+                </div>
+            </div>
+            <a id="Donate" href="/donate/donate.html">Donate</a>
+        </nav>
+    </div>
+    <main>
+        <div class="section">
+            <h2>Create Event</h2>
+            <form id="create-event-form">
+                <label for="create-image-url">Image URL:</label>
+                <input type="text" id="create-image-url" name="image_url" required>
+
+                <label for="create-title">Title:</label>
+                <input type="text" id="create-title" name="title" required>
+
+                <label for="create-details">Details:</label>
+                <textarea id="create-details" name="details" required></textarea>
+
+                <button type="submit">Create Event</button>
+            </form>
+        </div>
+
+        <div class="section">
+            <h2>Update Event</h2>
+            <form id="update-event-form">
+                <label for="update-event-id">Event ID:</label>
+                <input type="text" id="update-event-id" name="event_id" required>
+
+                <label for="update-image-url">Image URL:</label>
+                <input type="text" id="update-image-url" name="image_url" required>
+
+                <label for="update-title">Title:</label>
+                <input type="text" id="update-title" name="title" required>
+
+                <label for="update-details">Details:</label>
+                <textarea id="update-details" name="details" required></textarea>
+
+                <button type="submit">Update Event</button>
+            </form>
+        </div>
+
+        <div class="section">
+            <h2>Delete Event</h2>
+            <form id="delete-event-form">
+                <label for="delete-event-id">Event ID:</label>
+                <input type="text" id="delete-event-id" name="event_id" required>
+
+                <button type="submit">Delete Event</button>
+            </form>
+        </div>
+    </main>
+        <!-- overlay pop up thin gy -->
+        <div id="sidePopupOverlay" class="side-overlay">
+            <div class="side-popup-content">
+                <span class="close">&times;</span> <!-- Close button -->
+                <div class="dashboard-container">
+                    <div class="navigation">
+                        <ul id="menu-list">
+                            <li class="profile">
+                                <span id="user-position" class="position"></span>
+                                <div class="icon profile-icon"><i class="fa-solid fa-user"></i></div>
+                                <div id="user-name" class="name"></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+    <script src="/menu.js"></script>
+    <script src="/Menu/manageEvents.js"></script>
+</body>
+</html>
+
+

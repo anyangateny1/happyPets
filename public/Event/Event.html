@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Shelter</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/pet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/newNavigation.css">
+    <link rel="stylesheet" href="Event.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c826e1e5a9.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="topLayer">
+        <a href="/index.html">
+            <div id="logoSection">
+              <div id="logo"></div>
+              <p id="logoName">Happy Pets</p>
+            </div>
+          </a>
+
+        <div id="signingButtons">
+            <a id="login" href="/login/login.html">Login</a>
+            <a id="signUp" href="/login/signup.html">Sign Up</a>
+            <a id="logout" href="/login/login.html" style="display: none;">Logout</a>
+        </div>
+    </div>
+
+    <div id="banner">
+        <nav id="bannerContent">
+            <a id="Menu" href="/menu.html">Menu</a>
+            <div id="pagesContainer">
+                <a class="pages" href="/index.html"> Home </a>
+                <a class="pages" href="/about/about.html"> About Us </a>
+                <a class="pages" href="/adopt/adopt.html"> Adopt a Pet</a>
+                <a class="pages" href="/contact/contact.html"> Contact Us</a>
+                <a class="pages" href="/volunteer/volunteer.html"> Volunteer</a>
+                <a class="pages" href="/Event/Event.html"> Events</a>
+            </div>
+            <a id="Donate" href="/donate/donate.html">Donate</a>
+        </nav>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2>Event Details</h2>
+            <p>We are going to use MySQL and JS to link so respective events are clicked when their respective learn more is clicked.</p>
+        </div>
+    </div>
+
+    <main>
+        <div class="image"><h1>See upcoming events!</h1></div>
+        <div class="event-scroll">
+            <div class="event-container">
+            </div>
+        </div>
+        <button type="button" class="find-events-button">
+            <i class="fas fa-search"></i>
+            Find Events</button>
+    </main>
+
+    <footer>
+        <h3>Subscribe to Our Newsletter</h3>
+        <form id="subscribeForm">
+          <input type="email" id="email" name="email" placeholder="Your email" required>
+          <div class="checkbox-group">
+            <label><input type="checkbox" name="notifications" value="Updates"> Updates</label>
+            <label><input type="checkbox" name="notifications" value="Events"> Events</label>
+          </div>
+          <button type="submit">Subscribe</button>
+        </form>
+        <p>&copy; 2024 Happy Pets. All rights reserved.</p>
+      </footer>
+
+    <!-- overlay pop up thin gy -->
+
+    <div id="sidePopupOverlay" class="side-overlay">
+        <div class="side-popup-content">
+            <div class="dashboard-container">
+                <div class="navigation">
+                    <ul id="menu-list">
+                        <li class="profile">
+                            <span id="user-position" class="position"></span>
+                            <div class="icon profile-icon"><i class="fa-solid fa-user"></i></div>
+                            <div id="user-name" class="name"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+  <script src="../menu.js"></script>
+  <script src="event.js"></script>
+  <script src="../subscribe.js" defer></script>
+</body>
+</html>

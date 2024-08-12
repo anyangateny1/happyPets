@@ -1,0 +1,225 @@
+main {
+    flex: 1;
+}
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+/*Contact Section*/
+
+#contact-div{
+    /* Flex direction */
+    flex-direction: row;
+
+    justify-content: space-evenly;
+
+
+    padding-top: 18vh;
+    background-color: #545454;
+    padding-bottom: 20vh;
+    display: flex;
+    color: white;
+}
+
+#contact-div{
+    font-size: 20px;
+}
+
+#icon-address{
+    background-image: url("/images/nav_transparent.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 5.5em;
+}
+
+#icon-phone{
+    background-image: url("/images/call_transparent.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 5.5em;
+}
+
+#icon-email{
+    background-image: url("/images/mail_transparent.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 5.5em;
+}
+
+.contact-section h2{
+    font-weight: bold;
+    font-size: 3em;
+    margin-top: -0.5em;
+    margin-bottom: 0.5em;
+}
+
+.sub-headings{
+    font-weight: bold;
+    color: yellow;
+}
+
+/*Message Section*/
+#message-div{
+    margin: 0%;
+    font-size: xx-large;
+    text-align: center;
+    background-color: #d9d9d9;
+    padding-top: 10vh;
+    padding-bottom: 30vh;
+}
+
+#message-div h2{
+    color: blue;
+    font-weight: bold;
+}
+
+#message-div p{
+    margin-top: 2em;
+    font-size: 25px;
+}
+
+#message-div form{
+    margin-top: 2em;
+    font-size: 16px;
+}
+
+#first-last-container{
+    /* Flex direction */
+    flex-direction: row;
+    display: flex;
+}
+
+#first-name-div{
+    /* Flex direction */
+    flex-direction: column;
+    display: flex;
+
+    font-weight: bold;
+}
+
+#first-name-div label{
+    text-align: left;
+}
+
+#firstName{
+    padding:0.5em;
+
+}
+
+/* Last name fill in section*/
+#last-name-div{
+    /* Flex direction */
+    flex-direction: column;
+    display: flex;
+
+    font-weight: bold;
+    margin-left: auto;
+}
+
+#last-name-div label{
+    text-align: left;
+}
+
+#lastName{
+    padding:0.5em;
+
+}
+
+
+/* Email fill in section*/
+#email-container{
+    /* Flex direction */
+    flex-direction: column;
+    display: flex;
+
+    font-weight: bold;
+    padding-top: 4em;
+
+    margin-left: auto;
+}
+
+#email-container label{
+    text-align: left;
+    margin-right: 50%;
+}
+
+#email-container input{
+    padding:0.5em;
+    margin-right: 50%;
+
+}
+
+/* Message fill in section */
+#message-container{
+    /* Flex direction */
+    flex-direction: column;
+    display: flex;
+
+    font-weight: bold;
+    padding-top: 4em;
+
+    margin-left: auto;
+}
+
+#message-container label{
+    text-align: left;
+    margin-right: 50%;
+}
+
+#message-container textarea{
+    padding:0.5em;
+    height: 15em;
+}
+
+/* Submit button design*/
+.submitButton {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+
+    margin-top: 3em;
+
+    padding: 0.9375rem 1.875rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+}
+
+.submitButton:hover {
+    background-color: #054908;
+}
+
+
+
+/* Entire form div*/
+#message-div form{
+    margin-top: 5em;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Rounding borders for input fields*/
+#enquiry input{
+    border-radius: 0.5em;
+    border-width: 0.2em;
+    border-color: black;
+}
+
+#message-container textarea{
+    border-radius: 0.5em;
+    border-width: 0.2em;
+    border-color: black;
+}
