@@ -1,5 +1,4 @@
-# Template Repository for COMP SCI 2207/7207 Web & Database Computing (2023 Semester 1)
-HI WELCOME TO OUR PROJECT
+# HappyPet
 
 STEPS ARE NUMBERED 1 - 4, PLEASE FOLLOW CAREFULLY.
 
